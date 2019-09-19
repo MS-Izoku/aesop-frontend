@@ -1,33 +1,46 @@
-.App {
-  text-align: center;
+.DraftEditor-root{
+  border: 1px solid lightslategrey;
+  border-radius: 0.5vh;
+  width: 100%;
+  min-width: 100%;
+  background: green;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.DraftEditor-editorContainer{
+  border: 0.1vh solid lightgrey;
+  background: ghostwhite;
+  padding: 3vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.public-DraftEditor-content{
+  height: 100%;
+  min-height: 60em;
 }
 
-.App-link {
-  color: #61dafb;
+.leftTextEditorBar{
+  width: 33%;
+  min-width: 20em;
+  background: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerNavBar{
+  min-width: 100%;
+  width: 100%;
+}
+
+.stretchWidth{
+  min-width: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+
+.userAvatar{
+  min-width: 5vh;
+  width: 25%;
+  max-width: 10vh;
+
+  border-radius: 10%;
 }
