@@ -1,20 +1,7 @@
 import React from "react";
 const HeaderNavBar = props => {
-  const renderStoryDropDown = () => {
-    if (props.stories.length !== 0)
-      return props.stories.map(story => {
-        // the link needs to go to the show-page for the story
-        console.log(story);
-        return (
-          <div>
-            <a className="dropdown-item text-center" href="#">
-              {story.attributes.title}
-            </a>
-            <div className="dropdown-divider"></div>
-          </div>
-        );
-      });
-  };
+  const renderStoryDropDown = () => {};
+
   return (
     <div className="navbar-nav">
       <a

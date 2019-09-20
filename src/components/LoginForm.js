@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 
 export default class LoginForm extends Component {
+  constructor() {
+    super();
+    this.state = {
+      username: "",
+      password: ""
+    };
+  }
   handleSubmit = event => {
     event.preventDefault();
     console.log("Handling Submission");
-    console.log(event.target);
     // handle the fetch to the login page here
+  };
+
+  handleChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
   };
 
   render() {
@@ -23,6 +33,7 @@ export default class LoginForm extends Component {
             placeholder="username"
             className="form-control"
             id="username-input"
+            onChange={this.handleChange}
           ></input>
 
           <label for="password-input">Password</label>
@@ -32,6 +43,7 @@ export default class LoginForm extends Component {
             placeholder="password"
             className="form-control"
             id="password-input"
+            onChange={this.handleChange}
           ></input>
 
           <div className="text-center">

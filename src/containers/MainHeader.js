@@ -9,7 +9,7 @@ export default class MainHeader extends Component {
           <h1 className="navbar-brand">AESOP</h1>
           
           <HeaderNavBar stories={this.props.stories}/>
-          
+          <UserAvatar />
           {/* <UserAvatar current_user={this.props.current_user} /> */}
         </header>
       </span>
